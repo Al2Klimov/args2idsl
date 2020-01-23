@@ -25,4 +25,6 @@ func main() {
 	buf.Write([]byte("]\n"))
 
 	io.Copy(os.Stdout, &buf)
+
+	os.Exit(4)
 }
